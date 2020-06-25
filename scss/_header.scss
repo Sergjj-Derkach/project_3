@@ -1,0 +1,83 @@
+header{
+    background: url("../image/header/livello_1.png") center/cover;
+
+    > div{
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+        height: 100vh;
+       
+
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+            
+            .logo{
+                display: block;
+                width: 53px;
+                height: 40px;
+                background: url("../image/header/Livello_8.png") center/cover;
+            }
+            nav{
+                display: flex;
+                a{
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 400;
+
+                    &:nth-child(2){
+                        margin-left: 53px;
+
+                        @media (max-width:400px) {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                .basket{
+                    display: block;
+                    width: 24px;
+                    height: 20px;
+                    background: url("../image/header/shop_cart.png") center/cover;
+                    margin-left: 54px;
+
+                    @media (max-width:400px) {
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        
+        h1{
+            font-size: 60px;
+            font-weight: 400;
+            text-align: center;
+
+            @media (max-width:400px) {
+                font-size: 40px;
+            }
+        }
+        
+        p{
+            margin-top: 14px;
+            font-size: 20px;
+            text-align: center;
+
+            @media (max-width:400px) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .down{
+            display: block;
+            width: 34px;
+            height: 22px;
+            background: url("../image/header/down.png") center/cover;
+            align-self: center;
+            margin-bottom: 47px;
+        }
+    }
+}

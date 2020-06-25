@@ -1,0 +1,477 @@
+.catalog{
+
+    .cont_width{
+        flex-direction: column;
+        padding: 87px 15px 131px;
+        max-width: 1090px;
+        overflow: hidden;
+
+        .products{
+            display: flex;
+            flex-direction: column;
+           
+            
+            .men{
+                display: flex;
+                flex-direction: column;            
+                margin-bottom: 93px;
+                
+                .line{
+                    max-width: 1090px;
+
+                    .mw_line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+         
+                     span{
+                         display: block;
+         
+                         &:nth-child(1){
+                             color: #424242;
+                             font-size: 20px;
+                             font-weight: 400;
+                             text-transform: uppercase; 
+                             padding-right: 30px;   
+                         }
+         
+                         &:nth-child(2){
+                             width: 100%;
+                             max-width: 996px;
+                             height: 2px;
+                             background-color: #cccccc;
+                         }
+                     }
+                } 
+                    .carousel{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        margin: 49px 0 17px 0;
+         
+                     span{
+                         color: #aa9b77;
+                         font-size: 16px;
+                         font-weight: 400;
+                         margin-bottom: 7px;
+                    }
+
+                     div{
+                         display: flex;
+                         
+                         .to_left{
+                             display: block;
+                             width: 12px;
+                             height: 16px;
+                             background: url("../image/catalog/to-left.png") no-repeat center/cover;
+                             margin-right: 7px;
+                         }
+                         .to_right{
+                             display: block;
+                             width: 12px;
+                             height: 16px;
+                             background: url("../image/catalog/to-right.png") no-repeat center/cover;
+                        }
+                    }
+                }
+            }
+
+                .men_product{
+                    display: flex;
+
+                    .product{
+                        width: 320px;
+                        height: 378px;
+                        background-color: #f5f6f7;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 25px;
+                        margin: 0 20px;
+                        border: 6px solid transparent;
+                        
+                        .size_color{
+                            display: flex;
+                            justify-content: space-between;
+        
+                            .size{
+                                display: flex;
+                                align-items: center;
+            
+                                span{
+                                    color: #424242;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    margin-right: 5px;
+                                }
+                                a{
+                                    display: block;
+                                    width: 12px;
+                                    height: 8px;
+                                    background: url("../image/catalog/fa-angle-down.png") center/cover;
+                                }
+                            }
+                        
+                        .color{
+                            display: flex;
+        
+                            a{
+                                display: block;
+                                width: 22px;
+                                height: 21px;
+                                border-radius: 50%;
+                                
+                                &:nth-child(1){
+                                    background-color: #165eb9;
+                                }
+                                &:nth-child(2){
+                                    background-color: #ffe637;
+                                    margin: 0 5px;
+                                }
+                                &:nth-child(3){
+                                    background-color: #535253;
+                                }
+                            }
+                        }
+                        } 
+        
+                        .foto_product{
+                            width: 146px;
+                            height: 189px;
+                            background: url("../image/catalog/Livello_2.png") center/cover;
+                            align-self: center;
+                        }
+        
+                        .descrip_prod{
+                            display: flex;
+                            justify-content: space-between;
+            
+                            .name{
+                                color: #aa9b77;
+                                font-size: 18px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                            .price{
+                                color: #424242;
+                                font-size: 22px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        &:hover{
+                            border-radius: 3px;
+                            border: 6px solid #aa9b77;
+                            background-color: #f5f6f7;
+                        }
+
+                        
+                    }
+
+                    .m_num_2{
+
+                        .size_color{
+                                                   
+                            .color{
+                                display: none;
+                            }
+                        }
+                        .foto_product{
+                            width: 116px;
+                            height: 232px;
+                            background: url("../image/catalog/Livello_3.png") center/cover;
+                        }
+          
+                    }
+
+                    .m_num_3{
+
+                        .size_color{
+                                                   
+                            .color{
+                                display: none;
+                            }
+                        }
+                        .foto_product{
+                            width: 143px;
+                            height: 211px;
+                            background: url("../image/catalog/Livello_4.png") center/cover;
+                        }
+          
+                    }
+
+                    @media (max-width:930px) {
+                        flex-wrap: wrap;
+                        
+                        .product{
+                            margin: 15px 20px;
+                        }
+                    }
+
+                    @media (max-width:768px) {
+                        flex-direction: column;
+                        align-items: center;
+                    
+                    }
+
+                    @media (max-width:390px) {
+                       
+                        .product{
+                        width: 290px; 
+                        margin: 15px 0;
+                        }
+                    }
+                }
+                    
+            }
+            
+            .women{
+                display: flex;
+                flex-direction: column;            
+
+                .line{
+                    max-width: 1090px;
+                    
+                    .mw_line{
+                     display: flex;
+                     flex-direction: row-reverse;
+                     justify-content: space-between;
+                     align-items: center;
+         
+                        span{
+                            display: block;
+            
+                            &:nth-child(1){
+                                color: #424242;
+                                font-size: 20px;
+                                font-weight: 400;
+                                text-transform: uppercase; 
+                                padding-left: 30px;    
+                            }
+            
+                            &:nth-child(2){
+                                width: 100%;
+                                max-width: 950px;
+                                height: 2px;
+                                background-color: #cccccc;
+                            }
+                        }
+                    } 
+                    .carousel{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin: 49px 0 17px 0;
+         
+                        span{
+                            color: #aa9b77;
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-bottom: 7px;
+                        }
+
+                        div{
+                            display: flex;
+                            
+                            .to_left{
+                                display: block;
+                                width: 12px;
+                                height: 16px;
+                                background: url("../image/catalog/to-left.png") no-repeat center/cover;
+                                margin-right: 7px;
+                            }
+                            .to_right{
+                                display: block;
+                                width: 12px;
+                                height: 16px;
+                                background: url("../image/catalog/to-right.png") no-repeat center/cover;
+                            }
+                        }
+                    }
+                 }
+
+                .women_product{
+                    display: flex;  
+
+                    .product{
+                        width: 320px;
+                        height: 378px;
+                        background-color: #f5f6f7;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 25px;
+                        margin: 0 20px;
+                        border: 6px solid transparent;
+                        
+                        .size_color{
+                            display: flex;
+                            justify-content: space-between;
+            
+                            .size{
+                                display: flex;
+                                align-items: center;
+            
+                                span{
+                                    color: #424242;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    margin-right: 5px;
+                                }
+                                a{
+                                    display: block;
+                                    width: 12px;
+                                    height: 8px;
+                                    background: url("../image/catalog/fa-angle-down.png") center/cover;
+                                }
+                            }
+                        
+                            .color{
+                                display: flex;
+            
+                                a{
+                                    display: block;
+                                    width: 22px;
+                                    height: 21px;
+                                    border-radius: 50%;
+                                    
+                                    &:nth-child(1){
+                                        background-color: #165eb9;
+                                    }
+                                    &:nth-child(2){
+                                        background-color: #ffe637;
+                                        margin: 0 5px;
+                                    }
+                                    &:nth-child(3){
+                                        background-color: #535253;
+                                    }
+                                }
+                            }
+                        } 
+        
+                        .foto_product{
+                            width: 146px;
+                            height: 189px;
+                            background: url("../image/catalog/Livello_2.png") center/cover;
+                            align-self: center;
+                        }
+            
+                        .descrip_prod{
+                            display: flex;
+                            justify-content: space-between;
+            
+                            .name{
+                                color: #aa9b77;
+                                font-size: 18px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                            .price{
+                                color: #424242;
+                                font-size: 22px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                            }
+                        }
+                        
+                        &:hover{
+                            border-radius: 3px;
+                            border: 6px solid #aa9b77;
+                            background-color: #f5f6f7;
+                        }
+                    }
+
+                    .w_num_1{
+
+                        .size_color{
+                                                   
+                            .color{
+                                display: none;
+                            }
+                        }
+                        .foto_product{
+                            width: 197px;
+                            height: 216px;
+                            background: url("../image/catalog/Livello_5.png") center/cover;
+                        }
+          
+                    }
+
+                    .w_num_2{
+
+                        .size_color{
+                                                   
+                            .color{
+                                display: none;
+                            }
+                        }
+                        .foto_product{
+                            width: 174px;
+                            height: 135px;
+                            background: url("../image/catalog/Livello_6.png") center/cover;
+                        }
+          
+                    }
+
+                    .w_num_3{
+
+                        .size_color{
+                                                   
+                            .color{
+                                
+                                a{
+                                                                       
+                                    &:nth-child(1){
+                                        background-color: #d3a7ac;
+                                    }
+                                    &:nth-child(2){
+                                        background-color: #fff;
+                                        margin: 0 5px;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        .foto_product{
+                            width: 175px;
+                            height: 227px;
+                            background: url("../image/catalog/Livello_7.png") center/cover;
+                        }
+          
+                    }
+                    
+                    @media (max-width:930px) {
+                        flex-wrap: wrap;
+
+                        .product{
+                            margin: 15px 20px;
+                        }
+                    }
+
+                    @media (max-width:768px) {
+                        flex-direction: column;
+                        align-items: center;
+                    
+                    }
+
+                    @media (max-width:390px) {
+                       
+                        .product{
+                        width: 290px; 
+                        margin: 15px 0;
+                        }
+                    }
+
+                }
+                    
+            }
+            
+        }
+        
+
+        
+    }
+}

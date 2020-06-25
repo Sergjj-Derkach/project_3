@@ -1,0 +1,17 @@
+@import '_header.scss';
+@import '_choice.scss';
+@import '_catalog.scss';
+@import '_about_us_and_twitter.scss';
+@import '_footer.scss';
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+    .cont_width{
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0 20px;
+    }
+}

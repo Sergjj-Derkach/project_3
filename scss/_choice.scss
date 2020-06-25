@@ -1,0 +1,85 @@
+.choice{
+    background: #f5f6f7;
+    
+    > div{
+        flex-direction: column;
+        
+        .menu_catalog{
+            background-color: #f5f6f7;
+            display: flex;
+            justify-content: space-between;
+            padding: 46px 0;   
+            align-items: center;        
+            
+            > div{
+               display: flex;
+
+                label{
+                    display: flex;
+                    align-items: center;
+
+                    .checkbox{
+                       display: none;
+
+                       &:checked + .check:before{
+                            background: url("../image/choice/2-layers.png") no-repeat center/cover;
+                       }
+                    }
+
+                    .check{
+                        display: inline-block;
+                        width: 25px;
+                        height: 24px;
+                        margin-right: 19px;
+
+                        &:before{
+                            content: '';
+                            display: block;
+                            width: 25px;
+                            height: 24px;
+                            background: url("../image/choice/copia_2.png") no-repeat center/cover;
+                        }
+                    }
+
+                    .text{
+                        color: #333333;
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-right: 40px;
+                    }
+
+                    @media (max-width:710px) {
+                        margin: 10px 0;
+                    }
+                } 
+
+                @media (max-width:710px) {
+                    flex-direction: column;
+                }
+            }
+            
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                border-radius: 3px;
+                background-color: #aa9b77;
+                width: 204px;
+                height: 52px;
+
+                @media (max-width:400px) {
+                    margin-top: 15px;
+                }
+            }
+
+            @media (max-width:400px) {
+                flex-direction: column;
+            }
+        }
+    }
+}
